@@ -1,3 +1,4 @@
+# Russ Lankenau
 # .bashrc
 
 # Source global definitions
