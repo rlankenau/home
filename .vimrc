@@ -25,11 +25,6 @@ function ToggleList()
 	endif
 endfunction
 
-function GNUFormat()
-	set shiftwidth=8
-	set tabstop=8
-endfunction
-
 nnoremap <silent> - :bp<CR>
 nnoremap <silent> \ :buffers<CR>
 nnoremap <silent> = :bn<CR>
