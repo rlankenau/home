@@ -12,7 +12,6 @@ set showcmd
 
 set shiftwidth=4
 set tabstop=4
-set virtualedit=all
 
 set ls=2
 set lcs=tab:[~
