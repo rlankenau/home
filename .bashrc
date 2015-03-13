@@ -1,4 +1,5 @@
-# Russ Lankenau
+echo ".bashrc"
+#Russ Lankenau
 # .bashrc
 
 # Source global definitions
@@ -14,10 +15,30 @@ export HISTCONTROL=ignoreboth
 
 shopt -s histappend
 
-alias ls='ls --color=auto'
-alias ll='ls -l'
-alias la='ls -a'
+alias vi=vim
+
+alias ll="ls -l"
+alias la="ls -a"
 
 if [ -f /etc/bash_completion ]; then
 	. /etc/bash_completion
 fi
+
+up() {
+	local path i count
+	i=0	
+	if [ "$1" = "" ]; then
+		count=1
+	else
+		count=$1
+	fi
+	while [ $i -lt $count ]
+	do
+		path+=../
+		let "i+=1"
+	done
+	cd "$path"
+}
+
+export CLICOLOR=TRUE
+export LSCOLORS=Gxfxbxdxcxegedabagacad
