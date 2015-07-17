@@ -9,6 +9,6 @@ export PS1="\n\[\033[1;34m\][\w]\n\[\033[0m\]\u@\h\$"
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:/usr/local/rlankenau/java/bin/
 
 export PATH
